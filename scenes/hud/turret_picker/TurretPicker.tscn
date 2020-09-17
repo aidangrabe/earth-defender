@@ -30,6 +30,7 @@ __meta__ = {
 [node name="GunTurretButton" parent="HBoxContainer" instance=ExtResource( 1 )]
 margin_left = 412.0
 margin_right = 476.0
+cost = 50
 
 [node name="GunTurretButton2" parent="HBoxContainer" instance=ExtResource( 1 )]
 margin_left = 480.0
@@ -38,6 +39,7 @@ margin_right = 544.0
 [node name="GunTurretButton3" parent="HBoxContainer" instance=ExtResource( 1 )]
 margin_left = 548.0
 margin_right = 612.0
+cost = 150
 [connection signal="gui_input" from="." to="." method="_on_TurretPicker_gui_input"]
 [connection signal="on_click" from="HBoxContainer/GunTurretButton" to="." method="_on_GunTurretButton_on_click"]
 [connection signal="on_click" from="HBoxContainer/GunTurretButton2" to="." method="_on_GunTurretButton_on_click"]

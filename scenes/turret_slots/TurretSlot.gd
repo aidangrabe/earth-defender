@@ -27,7 +27,7 @@ func _on_ClickArea_input_event(_viewport, event, _shape_idx):
 ### Other
 
 func on_turret_picked(turret):
-	# TODO create the correspoinding turret
+	# TODO create the corresponding turret
 	add_turret()
 
 func is_empty():

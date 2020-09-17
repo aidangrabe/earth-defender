@@ -1,11 +1,16 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scenes/earth/Earth.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/turret_rings/TurretRing.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/hud/HUD.gd" type="Script" id=3]
 [ext_resource path="res://scenes/hud/turret_picker/TurretPicker.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/MainGame.gd" type="Script" id=5]
 
-[node name="MainGame" type="Node2D"]
+[node name="MainGame" type="Node2D" groups=[
+"shop",
+]]
+script = ExtResource( 5 )
+initial_gold = 99
 
 [node name="Earth" parent="." instance=ExtResource( 1 )]
 position = Vector2( 500, 300 )
@@ -13,7 +18,7 @@ rotation_speed = 0.3
 
 [node name="TurretRing" parent="Earth" instance=ExtResource( 2 )]
 ring_radius = 96
-number_of_turret_slots = 4
+number_of_turret_slots = 1
 ring_color = Color( 0, 0.215686, 0.215686, 1 )
 draw_ring = true
 
