@@ -10,7 +10,7 @@
 "shop",
 ]]
 script = ExtResource( 5 )
-initial_gold = 99
+initial_gold = 400
 
 [node name="Earth" parent="." instance=ExtResource( 1 )]
 position = Vector2( 500, 300 )
@@ -19,6 +19,16 @@ rotation_speed = 0.3
 [node name="TurretRing" parent="Earth" instance=ExtResource( 2 )]
 ring_radius = 96
 number_of_turret_slots = 1
+edit_ring_threshold = 25
+rotation_speed = -0.2
+ring_color = Color( 0, 0.215686, 0.215686, 1 )
+draw_ring = true
+
+[node name="TurretRing2" parent="Earth" instance=ExtResource( 2 )]
+ring_radius = 180
+number_of_turret_slots = 4
+edit_ring_threshold = 25
+rotation_speed = 0.4
 ring_color = Color( 0, 0.215686, 0.215686, 1 )
 draw_ring = true
 

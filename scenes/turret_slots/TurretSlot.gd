@@ -46,7 +46,7 @@ func add_turret():
 	var Turret = load("res://scenes/turrets/Turret.tscn")
 	var turret = Turret.instance()
 
-	turret.rotation = random_gen.randf() * PI * 2
+	#turret.rotation = random_gen.randf() * PI * 2
 
 	add_child(turret)
 
